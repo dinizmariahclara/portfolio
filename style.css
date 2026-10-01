@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: rgb(250, 238, 177);
+}
+#sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.imagem {
+    width: 30%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+header{
+    background-color: #ec6c9b;
+    border-radius: 30px;
+}
+
+header h1 {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+header h2 {
+    padding: 10px;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 24px;
+}
+
+nav ul{
+    font-size: 20px;
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: black;
+}
+
+nav ul li a:hover{
+    background-color: rgb(237, 225, 116);
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background: #f5a1c0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#projetos .container_foto {
+    width: 100%;
+}
+
+#projetos h2 {
+    margin-bottom: 20px;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projeto {
+    width: 250px;
+    height: 280px;
+    padding: 10px;
+    background-color: #f5eeb1;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.projeto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+.texto-projeto {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #f5eeb1;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container_foto {
+    max-width: 100%;
+    
+    size: 200px;
+    
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_foto img {
+  display: block;
+  width: 100%; 
+  height: auto;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.projeto {
+    width: 30%;
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #e83d7c;
+    border-radius: 25px 25px 10px 10px;
+    display: block;
+}
+
+.texto-projeto {
+    width: 100%;
+    padding: 10px;
+    border: 2px rgb(237, 225, 116);
+    border-radius: 10px;
+    background-color: #e83d7c;
+    text-align: center;
+    font-size: 17px;
+}
+
+#certificados .container {
+    width: 100%;
+}
+
+#certificados h2 {
+    margin-bottom: 20px;
+}
+
+.certificados {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.certificado {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    background-color: #f5eeb1;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.certificado img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #e83d7c;
+}
+
+.certificado button {
+    width: 90%;
+    padding: 8px;
+    border: 2px solid #e83d7c;
+    
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.certificado:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificado button:hover {
+    background-color: #e83d7c;
+    color: white;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 30px 40px;
+}
+.linha::before,
+.linha::after {
+    content: "";
+    width: 155px;
+    height: 2px;
+    background-color: #e83d7c;
+}
+
+.linha span {
+    background-color: #e83d7c;
+    font-size: 28px;
+}
+
+footer {
+    background-color: #f09aba;
+    border-radius: 8px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contatos a {
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.contatos img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+    transition: 0.3s;
+}
+
+.contatos a:hover img {
+    transform: scale(1.15);
+}
